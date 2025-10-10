@@ -3,13 +3,13 @@
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Home, Briefcase, Code, User, GraduationCap, Mail } from 'lucide-react';
+import { Home, Briefcase, Code, User, GraduationCap, Mail, AppWindow } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', path: '/', icon: <Home className="h-5 w-5" /> },
   { name: 'Experience', path: '/experience', icon: <Briefcase className="h-5 w-5" /> },
   { name: 'Apps', path: '/apps', icon: <Code className="h-5 w-5" /> },
-  { name: 'Projects', path: '/projects', icon: <Code className="h-5 w-5" /> },
+  { name: 'Projects', path: '/projects', icon: <AppWindow className="h-5 w-5" /> },
   { name: 'Skills', path: '/skills', icon: <User className="h-5 w-5" /> },
   { name: 'Education', path: '/education', icon: <GraduationCap className="h-5 w-5" /> },
   { name: 'Contact', path: '/contact', icon: <Mail className="h-5 w-5" /> },
